@@ -1,0 +1,347 @@
+/* variables a ser usadas  */
+:root {
+    --primary:#ffffff;
+    --secundary:#2e4469;
+    --background:#35495e;
+    --black-text:rgb(61, 61, 61);
+    --white-text:#000000;
+    --blue-gradient:linear-gradient(90deg,#42b983,#35495e);
+    --button-hover:#5b79a2;
+    --text-shadow:.2rem .2rem .2rem #0d0d0e;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+/* navegador  */
+nav{
+    background-color: var(--primary);
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1001;
+}
+
+.logo a{
+    padding: 10px;
+    align-items: center;
+}
+.logo a img{
+    width: 90%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    border-right: 1px solid slategrey;
+    font-weight: bold;
+    padding: 0 12px;
+    color: var(--white-text);
+    cursor: pointer;
+}
+nav ul li:last-child{
+    border-right: none;
+}
+nav ul li:hover{
+    background-color: #FDD000;
+    transition: all 0.3s;
+    padding: 9px 4px;
+    border-radius: 5px;
+}
+nav ul li a{
+    color: var(--white-text);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+nav ul li a i{
+    margin-right: 4px;
+}    
+.drawer{
+    font-size: 3rem;
+    color: var(--white-text);
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+    border: solid 1.5px var(--white-text);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#ckbox{
+    display: none;
+}
+.hero{
+    background-image: url(../img/portada_miel.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 150px;
+}
+/*mieles*/
+.productos{
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+}
+    .mieles{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+        .catalogo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 678px;
+            border-bottom: solid 4px #938F8F;
+        }
+        .catalogo_ultimo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 678px;
+        }
+            
+            .datos h3{
+                font-family: Barlow;
+                font-weight: bold;
+                font-size: 45px;
+            }
+                .tabla {
+                    margin-top: 20px;
+                    display: flex;
+                    font-family: Barlow;
+                    font-size: 29px;
+                }
+                .tabla .col2 {
+                    margin-left: 100px;
+                }
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #c4bfbf;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .contacto {
+    display: flex;
+    font-family: barlow;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+.pie-pagina .grupo-1 .contacto p{
+    display: flex;
+    align-items: center;
+    font-family: barlow;
+}
+.pie-pagina .grupo-1 .contacto a{
+    display: flex;
+    align-items: center;
+    font-family: barlow;
+    text-decoration: none;
+    color: #5A5A5A;
+}
+.pie-pagina .grupo-1 .contacto a:hover{
+    color: #FDD000;
+    transition: 0.5s;
+}
+.pie-pagina .grupo-1 .contacto h3{
+    color: #000000;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-family: barlow;
+    font-weight: bold;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #5A5A5A;
+    margin-bottom: 10px;
+}
+            .marcador{
+                width: 50.62px;
+                margin: 10px;
+                
+            }
+            .whatsapp{
+                width: 39.71px;
+                margin: 10px;
+                margin-right: 20px;
+                
+            }
+            .correo{
+                width: 39.71px;
+                margin: 10px;
+                margin-right: 20px;
+                
+            }
+.navegacion h3{
+    font-size: 25px;
+    font-family: barlow;
+}
+.pie-pagina .grupo-1 .navegacion a{
+    display: flex;
+    text-decoration: none;
+    height: 45px;
+    font-size: 13px;
+    line-height: 45px;
+    color: #5A5A5A;
+    margin-right: 10px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .navegacion a:hover{
+    color: #FDD000;
+}
+.pie-pagina .grupo-2{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    font-family: Barlow;
+    font-size: 30px;
+    height: 130px;
+    display: flex;
+    background-color: #938F8F;
+    padding: 15px 10px;
+    text-align: center;
+    color: #000000;
+}
+    .grupo-2 a {
+        text-decoration: none;
+        list-style: none;
+        font-size: 50px;
+        color: #000000;
+    }
+    .grupo-2 a:hover{
+        color: #FDD000;
+        transition: 0.5s;
+    }
+
+   
+        @media all and (max-width: 767px){
+            body{
+                width: 100%;
+            }
+            header{
+                width: 100%;
+            }
+            nav{
+                justify-content: flex-start;
+                width: 100%;
+            }
+            section{
+                width: 100%;
+            }
+            .drawer{
+                display: block;
+            }
+        
+            .logo{
+                margin-left: 1rem;
+            }
+        
+            nav ul {
+                position: fixed;
+                flex-flow: column;
+                align-items: stretch;
+                height: calc(100% - 149px);
+                overflow-y: auto;
+                width: 76%;
+                background-color: var(--background);
+                top: 26.1vh;
+                left:-100%;
+                transition: all .5s;
+                align-content: stretch;
+                text-align: center;
+            }
+        
+            nav ul li {
+                padding: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                border-bottom: solid .1rem rgba(201, 196, 196, 0.4);
+            }
+            #ckbox:checked  ~ .menu-box{
+                left:0;
+            }   
+            .hero{
+                font-size: 30px;
+            }
+            .catalogo{
+                flex-direction: column-reverse;
+                justify-content: center;
+                height: 900px;
+            }
+            .catalogo_ultimo{
+                flex-direction: column-reverse;
+                justify-content: center;
+                height: 900px;
+            }
+                .datos h3{
+                    font-size: 30px;
+                }
+                .tabla {
+                    font-size: 24px;
+                }
+                .tabla .col2 {
+                    margin-left: 30px;
+                }
+            .pie-pagina .grupo-1{
+                width: 90%;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap:30px;
+                padding: 35px 0px;
+            }
+        }
