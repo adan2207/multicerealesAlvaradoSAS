@@ -277,6 +277,7 @@ nav ul li a i{
             nav{
                 justify-content: flex-start;
                 width: 100%;
+                position: fixed;
             }
             section{
                 width: 100%;
